@@ -1,0 +1,21 @@
+<table class="table table-inverse">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% for(var i=0; i < data.length; i++) { %>
+    <tr>
+      <td><%= data[i].Name %></td>
+      <td><%= data[i].Address.Email %></td>
+      <td><%= data[i].Address.Phone %></td>
+      <td><%= data[i].Address.City %></td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>
